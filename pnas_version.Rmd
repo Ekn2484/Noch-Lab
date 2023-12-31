@@ -1,0 +1,81 @@
+---
+title: "Visualize CPTAC Protein-Expression Data"
+author: "Justin Gurvitch"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+This R Notebook contains code to visualize redox-enzyme expression from CPTAC mass-spec data (<https://cptac-data-portal.georgetown.edu/>).
+
+------------------------------------------------------------------------
+
+Load required packages:
+
+```{r Packages}
+require(ComplexHeatmap)
+require(dplyr)
+require(stringr)
+```
+
+Import raw proteomics datasets and metadata:
+
+```{r Imports}
+#import raw GBM dataset
+GBM_Proteome.raw <- read.csv("CPTAC3_Glioblastoma_Multiforme_Proteome.tmt11.csv", header=TRUE)
+#import GBM metadata and add BMI categories
+GBM_Proteome.meta <- read.table("CPTAC_GBM_proteome_metadata.txt",sep="\t",h=T)
+```
+
+Clean up the raw GBM dataset and make heatmaps of protein expression:
+
+```{r GBM}
+############################# PREPROCESSING ##################################
+
+#convert column 1 (proteins) into row names so that all data-frame elements are numerics
+GBM_Proteome.trimmed <- data.frame(GBM_Proteome.raw[,-1], row.names=GBM_Proteome.raw[,1])
+
+#remove the informational columns at the dataset's end
+GBM_Proteome.trimmed <- GBM_Proteome.trimmed[, -c(221:226)]
+
+#use keepUnsharedGBM to keep only those columns which  contain "unshared" log data (keep every even column)
+keepUnsharedGBM <- seq(2, length(GBM_Proteome.trimmed), 2)
+GBM_Proteome.trimmed <- GBM_Proteome.trimmed[ , keepUnsharedGBM]
+
+#sort columns alphabetically (this will make annotations easier)
+GBM_Proteome.trimmed <- GBM_Proteome.trimmed[ , order(colnames(GBM_Proteome.trimmed))]
+
+#remove sample CPT0217000004, which was withdrawn from the study and thus not analyzed in the CPTAC GBM paper (no genetic data)
+GBM_Proteome.trimmed <- GBM_Proteome.trimmed[ , -c(which(colnames(GBM_Proteome.trimmed) == "CPT0217000004.Unshared.Log.Ratio"))]
+
+############################# GENERATE ANNOTATIONS ##################################
+
+GBM_clinical_data_cols <- c("Tissue", "Sex", "Age", "BMI")
+GBM_genes_cols <- c("IDH1", "EGFR", "PTEN", "TP53", "NF1", "PDGFRA", "PIK3CA", "RB1", "ATRX", "BRAF", "PIK3R1", "TERT")
+
+GBM_clinical_data <- GBM_Proteome.meta[GBM_clinical_data_cols]
+GBM_genes <- GBM_Proteome.meta[GBM_genes_cols]
+
+#capitalize BMI entries
+GBM_clinical_data$BMI <- str_to_title(GBM_clinical_data$BMI)
+
+GBM_clinical_data.anno <- HeatmapAnnotation(df = as.data.frame(GBM_clinical_data))
+GBM_genes.anno <- HeatmapAnnotation(df = as.data.frame(GBM_genes))
+
+############################# REDOX ENZYMES REFINEMENT & HEATMAP ##################################
+
+#remove all rows except for the redox enzymes
+redox_enzymes <- c("CAT", "ERO1A", "GLO1", "GLRX", "GLRX3", "GPX1", "GPX3", "GPX4", "GSR", "HAGH", "MPO", "NOS1", "NQO1", "NQO2", "PDIA3", "PRDX1", "PRDX2", "PRDX3", "PRDX4", "PRDX5", "PRDX6", "SCARA3", "SIRT1", "SIRT2", "SMPD3", "SOD1", "SOD2", "SOD3", "TXN", "TXN2", "TXNDC17", "TXNDC5", "TXNRD2")
+GBM_Proteome_Redox_Enzymes.trimmed <- GBM_Proteome.trimmed[rownames(GBM_Proteome.trimmed) %in% redox_enzymes, ]
+
+#remove incomplete rows (proteins that didn't have MS data for every sample)
+GBM_Proteome_Redox_Enzymes.trimmed <- GBM_Proteome_Redox_Enzymes.trimmed[complete.cases(GBM_Proteome_Redox_Enzymes.trimmed),]
+
+#heatmap of GBM vs normal redox-enzyme expression without gene-mutation annotation (from CPTAC GBM paper oncoprint)
+Heatmap(as.matrix(GBM_Proteome_Redox_Enzymes.trimmed), column_title = "Redox Enzymes: GBM vs Normal", top_annotation = GBM_clinical_data.anno, show_column_names = FALSE, heatmap_legend_param = list(title = "Log2-Transformed\nExpression\nLevel"))
+
+#heatmap of GBM vs normal redox-enzyme expression with gene-mutation annotation (from CPTAC GBM paper oncoprint)
+Heatmap(as.matrix(GBM_Proteome_Redox_Enzymes.trimmed), column_title = "Redox Enzymes: GBM vs Normal", top_annotation = GBM_clinical_data.anno, bottom_annotation = GBM_genes.anno, show_column_names = FALSE, heatmap_legend_param = list(title = "Log2-Transformed\nExpression\nLevel"))
+```

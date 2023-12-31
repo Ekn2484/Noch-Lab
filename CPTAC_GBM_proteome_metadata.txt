@@ -1,0 +1,110 @@
+SampleID	Sex	Age	BMI_value	BMI	OS	Tissue	EGFR	PTEN	TP53	NF1	PDGFRA	PIK3CA	RB1	ATRX	BRAF	IDH1	PIK3R1	TERT
+CPT0002410011.Unshared.Log.Ratio	Female	59	20.61	normal	322	GBM		Mutant	Mutant	Mutant			Mutant					Mutant
+CPT0064650003.Unshared.Log.Ratio	Male	45	27.44	overweight	478	GBM			Mutant					Mutant		Mutant		
+CPT0064890003.Unshared.Log.Ratio	Male	74	25.07	overweight	645	GBM	Mutant											Mutant
+CPT0071100003.Unshared.Log.Ratio	Female	69	19.32	normal	154	GBM			Mutant	Mutant		Mutant		Mutant		Mutant		
+CPT0078580003.Unshared.Log.Ratio	Male	67	30.42	obese	684	GBM		Mutant	Mutant		Mutant							Mutant
+CPT0079790003.Unshared.Log.Ratio	Female	73	27.73	overweight	19	GBM	Mutant		Mutant				Mutant					
+CPT0087570003.Unshared.Log.Ratio	Male	49	33	obese		GBM	Mutant	Mutant			Mutant				Mutant			Mutant
+CPT0087680003.Unshared.Log.Ratio	Female	77	26	overweight	116	GBM		Mutant					Mutant					Mutant
+CPT0087730003.Unshared.Log.Ratio	Male	39	30.19	obese	1	GBM												Mutant
+CPT0087950003.Unshared.Log.Ratio	Female	60	31	obese		GBM	Mutant	Mutant										Mutant
+CPT0089150003.Unshared.Log.Ratio	Male	74	25.99	overweight	191	GBM	Mutant	Mutant			Mutant	Mutant						Mutant
+CPT0092440003.Unshared.Log.Ratio	Male	58	32.54	obese	129	GBM		Mutant	Mutant	Mutant					Mutant			Mutant
+CPT0093360003.Unshared.Log.Ratio	Female	65	21	normal		GBM	Mutant			Mutant								Mutant
+CPT0093450003.Unshared.Log.Ratio	Female	34	23	normal		GBM	Mutant	Mutant										Mutant
+CPT0093510003.Unshared.Log.Ratio	Male	63	29	overweight	6	GBM	Mutant	Mutant			Mutant							Mutant
+CPT0093550003.Unshared.Log.Ratio	Male	74	22	normal		GBM	Mutant	Mutant										Mutant
+CPT0093590003.Unshared.Log.Ratio	Male	65	27	overweight	245	GBM	Mutant											Mutant
+CPT0104220003.Unshared.Log.Ratio	Female	68	22.56	normal	497	GBM								Mutant	Mutant			
+CPT0104330003.Unshared.Log.Ratio	Male	48	30.11	obese		GBM				Mutant							Mutant	Mutant
+CPT0123530003.Unshared.Log.Ratio	Female	73	22.04	normal	66	GBM		Mutant	Mutant			Mutant	Mutant					Mutant
+CPT0125220003.Unshared.Log.Ratio	Female	64	25	overweight	7	GBM			Mutant	Mutant								Mutant
+CPT0125510003.Unshared.Log.Ratio	Female	51	19.46	normal		GBM									Mutant			
+CPT0125570003.Unshared.Log.Ratio	Male	50	38.34	obese	591	GBM	Mutant	Mutant								Mutant		Mutant
+CPT0127420003.Unshared.Log.Ratio	Male	59	24.22	normal	79	GBM	Mutant	Mutant										Mutant
+CPT0127480003.Unshared.Log.Ratio	Male	50	32.14	obese	349	GBM	Mutant	Mutant	Mutant									Mutant
+CPT0161730003.Unshared.Log.Ratio	Female	58	26.21	overweight	180	GBM		Mutant				Mutant						Mutant
+CPT0162020003.Unshared.Log.Ratio	Female	57	20	normal		GBM	Mutant	Mutant										Mutant
+CPT0162100003.Unshared.Log.Ratio	Male	66	25	overweight	382	GBM	Mutant	Mutant	Mutant		Mutant							Mutant
+CPT0162140003.Unshared.Log.Ratio	Female	69	22	normal	651	GBM				Mutant								Mutant
+CPT0167530003.Unshared.Log.Ratio	Male	49	26.37	overweight		GBM	Mutant											Mutant
+CPT0167640003.Unshared.Log.Ratio	Female	72	26.03	overweight	804	GBM	Mutant		Mutant									Mutant
+CPT0167750004.Unshared.Log.Ratio	Male	44	24.22	normal	590	GBM		Mutant										Mutant
+CPT0167860004.Unshared.Log.Ratio	Female	48	22.21	normal		GBM		Mutant										Mutant
+CPT0167970003.Unshared.Log.Ratio	Female	71	23.23	normal	121	GBM	Mutant	Mutant										Mutant
+CPT0168080003.Unshared.Log.Ratio	Female	53	26.71	overweight	841	GBM	Mutant	Mutant			Mutant							Mutant
+CPT0168270003.Unshared.Log.Ratio	Male	60	22.49	normal	270	GBM			Mutant		Mutant	Mutant						Mutant
+CPT0168380003.Unshared.Log.Ratio	Female	53	27.34	overweight		GBM	Mutant	Mutant										Mutant
+CPT0168480003.Unshared.Log.Ratio	Female	63	20.28	normal	340	GBM	Mutant	Mutant										Mutant
+CPT0168590003.Unshared.Log.Ratio	Female	61	20.03	normal		GBM		Mutant										Mutant
+CPT0168720003.Unshared.Log.Ratio	Male	53	21.88	normal		GBM			Mutant	Mutant			Mutant	Mutant				
+CPT0168830003.Unshared.Log.Ratio	Male	59	21.6	normal	411	GBM		Mutant	Mutant				Mutant					Mutant
+CPT0171580008.Unshared.Log.Ratio	Male	77	24.22	normal		GBM				Mutant	Mutant				Mutant			
+CPT0175060003.Unshared.Log.Ratio	Male	71	25.07	overweight		GBM		Mutant		Mutant								Mutant
+CPT0182500003.Unshared.Log.Ratio	Male	59	24.22	normal		GBM	Mutant											Mutant
+CPT0182550003.Unshared.Log.Ratio	Male	88	23.66	normal	265	GBM			Mutant					Mutant		Mutant	Mutant	
+CPT0182580003.Unshared.Log.Ratio	Male	65	34	obese	294	GBM		Mutant										Mutant
+CPT0186100003.Unshared.Log.Ratio	Male	47	30.42	obese	363	GBM	Mutant					Mutant						
+CPT0189250003.Unshared.Log.Ratio	Female	75	30.66	obese	43	GBM			Mutant	Mutant							Mutant	Mutant
+CPT0189460003.Unshared.Log.Ratio	Female	61	24.89	normal	280	GBM	Mutant										Mutant	Mutant
+CPT0189570004.Unshared.Log.Ratio	Male	43	46.97	obese		GBM												Mutant
+CPT0189650004.Unshared.Log.Ratio	Male	60	25.61	overweight	111	GBM	Mutant	Mutant										Mutant
+CPT0189750004.Unshared.Log.Ratio	Male	54	29.98	overweight		GBM	Mutant	Mutant										Mutant
+CPT0189850004.Unshared.Log.Ratio	Male	58	21.52	normal		GBM	Mutant										Mutant	Mutant
+CPT0190240004.Unshared.Log.Ratio	Male	34	32.69	obese		GBM												Mutant
+CPT0190360004.Unshared.Log.Ratio	Female	57	31.17	obese	237	GBM	Mutant	Mutant										Mutant
+CPT0196850003.Unshared.Log.Ratio	Female	76	32.95	obese	378	GBM			Mutant					Mutant		Mutant		
+CPT0199770003.Unshared.Log.Ratio	Female	66	28.58	overweight		GBM			Mutant		Mutant	Mutant				Mutant		
+CPT0201710003.Unshared.Log.Ratio	Male	77	23.66	normal		GBM					Mutant							
+CPT0204330003.Unshared.Log.Ratio	Female	59	23.86	normal		Normal												
+CPT0204340003.Unshared.Log.Ratio	Female	42	32.28	obese		Normal												
+CPT0204350003.Unshared.Log.Ratio	Female	56	18.88	normal		Normal												
+CPT0204360003.Unshared.Log.Ratio	Female	64	19.26	normal		Normal												
+CPT0204370003.Unshared.Log.Ratio	Female	68	29.23	overweight		Normal												
+CPT0204380003.Unshared.Log.Ratio	Male	43	35.44	obese		Normal												
+CPT0204390003.Unshared.Log.Ratio	Male	55	24.39	normal		Normal												
+CPT0204400003.Unshared.Log.Ratio	Male	58	27.12	overweight		Normal												
+CPT0204410003.Unshared.Log.Ratio	Male	62	27.37	overweight		Normal												
+CPT0204420003.Unshared.Log.Ratio	Male	68	18.8	normal		Normal												
+CPT0205450004.Unshared.Log.Ratio	Male	53	22.64	normal	311	GBM	Mutant				Mutant							
+CPT0205570003.Unshared.Log.Ratio	Male	53	22.49	normal		GBM	Mutant											
+CPT0205670004.Unshared.Log.Ratio	Male	70	25.95	overweight	779	GBM		Mutant										
+CPT0205780003.Unshared.Log.Ratio	Female	47	20.82	normal		GBM	Mutant											Mutant
+CPT0205890003.Unshared.Log.Ratio	Female	24	18.37	normal		GBM			Mutant	Mutant							Mutant	Mutant
+CPT0206000004.Unshared.Log.Ratio	Male	37	29.39	overweight	391	GBM	Mutant	Mutant										Mutant
+CPT0206110003.Unshared.Log.Ratio	Male	69	23.67	normal	546	GBM			Mutant	Mutant				Mutant				
+CPT0206230003.Unshared.Log.Ratio	Female	39	24.31	normal		GBM	Mutant	Mutant	Mutant				Mutant					Mutant
+CPT0206330003.Unshared.Log.Ratio	Male	64	23.53	normal		GBM			Mutant				Mutant	Mutant				
+CPT0206450003.Unshared.Log.Ratio	Male	53	31.22	obese		GBM										Mutant		
+CPT0206560003.Unshared.Log.Ratio	Male	47	25.26	overweight		GBM	Mutant	Mutant										Mutant
+CPT0206670004.Unshared.Log.Ratio	Male	53	26.12	overweight	314	GBM	Mutant	Mutant										Mutant
+CPT0206780003.Unshared.Log.Ratio	Male	35	26.3	overweight		GBM		Mutant	Mutant	Mutant		Mutant	Mutant					Mutant
+CPT0206880003.Unshared.Log.Ratio	Female	54	21.63	normal		GBM			Mutant	Mutant								
+CPT0207030003.Unshared.Log.Ratio	Male	54	28.73	overweight		GBM									Mutant			
+CPT0207090003.Unshared.Log.Ratio	Female	30	20.24	normal		GBM		Mutant			Mutant							
+CPT0208980003.Unshared.Log.Ratio	Female	65	23.88	normal		GBM							Mutant				Mutant	Mutant
+CPT0209440003.Unshared.Log.Ratio	Female	31	19.65	normal	141	GBM			Mutant									Mutant
+CPT0216920008.Unshared.Log.Ratio	Male	75	24.27	normal		GBM	Mutant	Mutant										Mutant
+CPT0217060003.Unshared.Log.Ratio	Female	64	24.79	normal		GBM	Mutant	Mutant			Mutant							
+CPT0217100003.Unshared.Log.Ratio	Female	63	23.82	normal	274	GBM	Mutant											
+CPT0217190003.Unshared.Log.Ratio	Male	60	24.45	normal		GBM		Mutant	Mutant		Mutant	Mutant						Mutant
+CPT0217430008.Unshared.Log.Ratio	Male	46	29.07	overweight	191	GBM	Mutant	Mutant				Mutant						Mutant
+CPT0217710008.Unshared.Log.Ratio	Male	66	25.69	overweight		GBM	Mutant							Mutant				Mutant
+CPT0217880003.Unshared.Log.Ratio	Male	58	31.47	obese		GBM		Mutant		Mutant								Mutant
+CPT0218330004.Unshared.Log.Ratio	Female	42	23.14	normal		GBM	Mutant	Mutant	Mutant									
+CPT0218670003.Unshared.Log.Ratio	Male	52	22.2	normal		GBM												Mutant
+CPT0218690004.Unshared.Log.Ratio	Male	59	31.35	obese		GBM	Mutant					Mutant						Mutant
+CPT0218770003.Unshared.Log.Ratio	Male	48	30.41	obese		GBM		Mutant	Mutant									Mutant
+CPT0218830004.Unshared.Log.Ratio	Female	51	27.18	overweight		GBM		Mutant	Mutant	Mutant			Mutant					Mutant
+CPT0218890004.Unshared.Log.Ratio	Male	66	27.17	overweight		GBM				Mutant								Mutant
+CPT0218960004.Unshared.Log.Ratio	Male	57	24.96	overweight	291	GBM				Mutant	Mutant							
+CPT0219080004.Unshared.Log.Ratio	Female	50	28.08	overweight	146	GBM	Mutant	Mutant										Mutant
+CPT0221180003.Unshared.Log.Ratio	Female	62	30.72	obese	7	GBM	Mutant								Mutant			Mutant
+CPT0224330003.Unshared.Log.Ratio	Male	70	25.99	overweight		GBM									Mutant			
+CPT0224390004.Unshared.Log.Ratio	Female	44	29.73	overweight		GBM		Mutant	Mutant	Mutant								Mutant
+CPT0224540004.Unshared.Log.Ratio	Female	38	29.4	overweight		GBM	Mutant	Mutant		Mutant		Mutant						Mutant
+CPT0224600003.Unshared.Log.Ratio	Male	59	26.93	overweight	87	GBM		Mutant			Mutant				Mutant			Mutant
+CPT0225730003.Unshared.Log.Ratio	Female	71	34.41	obese		GBM		Mutant	Mutant				Mutant	Mutant				
+CPT0225760003.Unshared.Log.Ratio	Female	80	27.56	overweight	126	GBM	Mutant					Mutant						Mutant
+CPT0228220003.Unshared.Log.Ratio	Female	60	23.44	normal		GBM		Mutant		Mutant								Mutant
